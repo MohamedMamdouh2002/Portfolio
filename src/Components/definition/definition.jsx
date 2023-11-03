@@ -81,9 +81,10 @@ export default function Definition() {
             </div>
               <div className="mt-9">
 
-                <a href={a} download className='btnColor text-lg px-5 py-3  text-yellow-500 '>
-
-              Download CV
+                <a href={a} download className=' cv  '>
+                <span>Download CV</span>
+                <span>Download CV</span>
+                          
                 </a>
               </div>
             
