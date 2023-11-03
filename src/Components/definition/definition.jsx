@@ -4,7 +4,7 @@ import MyPhoto from '../../Assets/Mypohotom.jpg'
 import { motion } from 'framer-motion';
 import {Helmet} from "react-helmet";
 import { Link } from "react-scroll";
-
+import a from '../../Assets/MohamedMamouh.cv.pdf'
 
 export default function Definition() {
   const [showbtn,setShowBtn]=useState(false)
@@ -17,7 +17,7 @@ export default function Definition() {
         setShowBtn(false)
 
       }
-      // console.log(window.scrollY);
+     
     })
   }, [])
   const [text]= useTypewriter({
@@ -27,7 +27,7 @@ export default function Definition() {
     deleteSpeed:200
   })
   return <>
-    <div id='home' className="grid-cols-1 pt-16   lg:grid-cols-2  items-center gap-3 lg:gap-0 grid lg:mt-9 mt-2">
+    <div id='home' className="grid-cols-1 pt-20   lg:grid-cols-2  items-center gap-3 lg:gap-0 grid lg:mt-9 mt-2">
         <div className=" w-max   h-max ">
           <div className=''>
             <motion.img 
@@ -81,9 +81,9 @@ export default function Definition() {
             </div>
               <div className="mt-9">
 
-                <a href='Mohamed-Mamdouh CV.pdf' download='Mohamed-Mamdouh CV.pdf' className='btnColor text-lg px-5 py-3  text-yellow-500 '>
+                <a href={a} download className='btnColor text-lg px-5 py-3  text-yellow-500 '>
 
-              download CV
+              Download CV
                 </a>
               </div>
             

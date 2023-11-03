@@ -69,8 +69,8 @@ let projects = [
       name: 'Egyptian-party',
       date:'Sep,2023',
       image: ep,
-      githPage: 'https://github.com/MohamedMamdouh2002/Egyptian-Party',
-      code: 'https://mohamedmamdouh2002.github.io/Egyptian-Party/',
+      githPage: 'https://mohamedmamdouh2002.github.io/Egyptian-Party/',
+      code: 'https://github.com/MohamedMamdouh2002/Egyptian-Party',
       skills: ['HTML', 'CSS', 'JavaScript', 'Bootstrap','jQuery'],
       pre: [<GrHtml5/>,<GrCss3/>,<FaNodeJs/>,<FaBootstrap/>]      
   },
@@ -88,20 +88,11 @@ let projects = [
       name: 'DevFolio',
       date:'Mar,2023',
       image: dev,
-      githPage: 'https://mohamed-abdelghaffar-abdelghaffar.github.io/DevFolio-Website/',
-      code: 'https://github.com/Mohamed-AbdElGhaffar-AbdElGhaffar/DevFolio-Website.git',
+      githPage: 'https://mohamedmamdouh2002.github.io/Devfoilo/',
+      code: 'https://github.com/MohamedMamdouh2002/Devfoilo',
       skills: ['HTML', 'CSS', 'Bootstrap'],
       pre: [<GrHtml5/>,<GrCss3/>,<FaBootstrap/>]      
 
-  },
-  {
-      name: 'Mealify',
-      date:'Mar,2023',
-      image:meal,
-      githPage: 'https://mohamed-abdelghaffar-abdelghaffar.github.io/Mealify-Website/',
-      code: 'https://github.com/Mohamed-AbdElGhaffar-AbdElGhaffar/Mealify-Website.git',
-      skills: ['HTML', 'CSS'],
-      pre: [<GrHtml5/>,<GrCss3/>]      
   },
   {
       name: 'DANIELS',
@@ -135,8 +126,8 @@ export default function Project() {
                   <div className="  relative">
                   <img className='h-44 w-full rounded-md' src={pro.image} alt="" />
                     <div className=' absolute bottom-2 right-1 flex gap-2 '>
-                    <a href={pro.githPage} target="_blank" className=' flex justify-center rounded-full w-7 h-7 bg-yellow-300 '><i class="fa-brands text-black fa-github text-xl"></i></a>
-                    <a href={pro.code} target="_blank" className=' text-yellow-300 flex justify-center rounded-full w-7 h-7 bg-yellow-300 '><i className="fa-solid fa-code text-lg text-black"></i></a>
+                    <a href={pro.githPage} target="_blank" className=' flex justify-center rounded-full w-7 h-7 bg-yellow-300 '><i class=" fas fa-eye text-lg"></i></a>
+                    <a href={pro.code} target="_blank" className=' text-yellow-300 flex justify-center rounded-full w-7 h-7 bg-yellow-300 '><i className="  text-lg fa-brands text-black fa-github"></i></a>
 
                       </div>
                   </div>

@@ -2,7 +2,7 @@ import { Fragment ,React, useEffect, useRef, useState} from 'react'
 import { Disclosure, Menu,  } from '@headlessui/react'
 import { Bars3Icon,  XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from "react-scroll";
-import { motion } from 'framer-motion';
+import ScrollY from '../ScrollY/ScrollY';
 
 
 
@@ -23,10 +23,11 @@ export default function Navbar() {
           document.body.classList.add("light")
         }
     },[theme])
-  return (
+  return (<>
     <Disclosure as="nav" className="">
       {({ open }) => (
         <><div className="container-fluid fixed  top-0 left-0 end-0 z-10 mainColor border-b">
+          <ScrollY/>
 
             <div className="mx-auto max-w-7xl px-2 ">
               <div className="relative flex h-16 items-center justify-between">
@@ -284,5 +285,6 @@ export default function Navbar() {
         </>
       )}
     </Disclosure>
+    </>
   )
 }

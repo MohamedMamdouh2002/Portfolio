@@ -2,14 +2,14 @@ import React from 'react'
 import { useForm, ValidationError } from '@formspree/react';
 import done from "../../animation/done.json";
 import contact from "../../animation/contact.json";
-import Lottie from 'lottie-react';
- 
+import Lottie from 'lottie-react'; 
 export default function Contact() {
   const [state, handleSubmit] = useForm("mjvqzyor");
 
   return <>
   
   <div id='contact'  className="  py-12  gap-3 bodyColor lg:gap-0  lg:mt-9 ">
+
       <h1 className='text-4xl mb-12 bodyColor  text-center tracking-widest italic	'> " Contact "</h1>
       <div className=" grid   lg:grid-cols-5 md:grid-cols-2  ">
         <div className="col-span-3 ">
@@ -62,22 +62,23 @@ export default function Contact() {
                           errors={state.errors}
                         />
                </div>
-               {/* <button
+             
+               <button
                 type='submit'
-                  onClick={handleSubmit}
-                disabled={state.submitting } className='px-3 text-black conBGColor py-3 rounded-lg mt-4 '>
-                {state.submitting? "Sending....":"Send a Message"}
-               </button> */}
-               <button type='submit'
-                  // onClick={handleSubmit}
-                disabled={state.submitting } className='px-3 text-black conBGColor py-3 rounded-lg mt-4 '>  
+                disabled={state.submitting} className='px-3 text-black conBGColor py-3 rounded-lg mt-4 '>  
                 Send a Message
-                </  button>
-                {state.succeeded&& <div className='flex items-center '>
-     <Lottie className='w-10' animationData={done} ></Lottie>
-     <h1>Your message has sent successfully 👌</h1>
-                </div>
-     }
+                
+                </button>
+                {/* {state. result?
+         
+
+                  
+                  <div className='flex items-center opacity-5 duration-200 '>
+                  <Lottie className='w-10' animationData={done} ></Lottie>
+                  <h1 >Your message has sent successfully 👌</h1> </div>
+
+             
+             :"sssss"  } */}
             </form>
           </div>
         </div>
