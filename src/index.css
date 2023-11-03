@@ -1,13 +1,90 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* scroll */
+::-webkit-scrollbar{
+    width: 8px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar-track{
+    background-color: var(--body-color);
+  
 }
+::-webkit-scrollbar-thumb{
+    
+    background-color: #FFCD34;
+}
+/* scroll */
+:root{
+    --nav-color:#29272F;
+    --second-color:white;
+    --body-color:#23272F;
+    --third-color:#FEFCF6;
+    --per-color:#000;
+    --per1-color:#fff;
+    --con-color:#FEFCF6;
+
+    
+}
+.light{
+    --nav-color:#FFCD34;
+    --second-color:#000;
+    --third-color:#23272F;
+    --body-color:#FEFCF6;
+    --per-color:#ffcd34;
+    --per1-color:#000;
+    --con-color:#ffcd34;
+
+    }
+
+    .conBGColor{
+        background-color: var(--con-color);
+    }
+.mainColor{
+    background-color: var(--nav-color);
+}
+.navItem{
+    color: var(--second-color);
+}
+.perBGColor{
+    background-color: var(--per-color);
+}
+.perColor{
+    color: var(--per1-color);
+}
+.bodyBGColor{
+    background-color: var(--body-color);
+}
+.proColor{
+    color: var(--body-color);
+}
+.bodyColor{
+    color: var(--second-color);
+}
+.btnColor{
+    background-color: var(--third-color);
+}
+
+.link:hover{
+        animation: .3s rotate linear infinite;
+    }
+@keyframes rotate {
+
+    0%{
+        transform: rotateZ(15deg);
+    }
+    50%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(-15deg);
+    }
+    
+}
+
+
+
+
+
+
