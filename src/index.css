@@ -82,21 +82,8 @@
     }
     
 }
-.skill1{
-        animation: 2s s linear infinite;
-    }
-@keyframes s {
-
-    0%{
-        transform: rotateZ(180);
-    }
-    50%{
-        transform: rotateZ(0deg);
-    }
-    100%{
-        transform: rotateZ(-180deg);
-    }
-    
+.nav:hover{
+transform: translateY(-9px);
 }
 .skill2{
         animation: 2s animate2 linear infinite;
@@ -114,37 +101,7 @@
     }
     
 }
-.skill3{
-        animation: 2s animate3 linear infinite;
-    }
-@keyframes animate3 {
 
-    0%{
-        opacity: 0;
-    }
-  
-    100%{
-       opacity: 1;;
-    }
-    
-}
-.skill4{
-        animation: 2s animate4 linear infinite;
-    }
-@keyframes animate4 {
-
-    0%{
-        transform: rotateY(360deg);
-    }
-    50%{
-        transform: rotateY(0deg);
-    }
-    100%{
-        transform: rotateY(0);
-    }
-   
-    
-}
 
 
 

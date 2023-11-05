@@ -2,10 +2,39 @@ import React, { useEffect, useState } from 'react'
 import { Cursor,useTypewriter} from 'react-simple-typewriter'
 import MyPhoto from '../../Assets/Mypohotom.jpg'
 import { motion } from 'framer-motion';
-import {Helmet} from "react-helmet";
 import { Link } from "react-scroll";
 import a from '../../Assets/MohamedMamouh.cv.pdf'
 
+
+const Links=[
+  {href:'https://www.facebook.com/mohamed.mamdouh.58555',
+   rel:'noreferrer',
+   icon:<i className="fa-brands  fa-facebook"></i>,
+   index:1,
+  },
+  {href:"https://www.facebook.com/mohamed.mamdouh.58555",
+   rel:'noreferrer',
+   icon:<i className="fa-brands fa-linkedin text-blue-500"></i>,
+   index:2,
+
+
+  },
+  {href:"https://github.com/MohamedMamdouh2002",
+   rel:'noreferrer',
+   icon:<i className="fa-brands fa-github perColor"></i>,
+   index:3,
+
+
+  },
+  {href:"https://wa.me/+201210898884?text=Welcome",
+   rel:'noreferrer',
+   icon:<i className="fa-brands fa-whatsapp  text-green-500"></i>,
+   index:3,
+
+
+  },
+
+]
 export default function Definition() {
   const [showbtn,setShowBtn]=useState(false)
   useEffect(() => {
@@ -64,24 +93,17 @@ export default function Definition() {
                 I am a self-taught frontend developer, Creating web pages and web applications is my passion. I am looking forward to being the kind of assistant you need to make your business flourish.
                 </p>
             </div>
-            <div className=" links mt-9 flex sm:text-3xl text-2xl bodyColor gap-5">
-              <a className=' text-blue-700   link  px-1' href="https://www.facebook.com/mohamed.mamdouh.58555" rel="noreferrer" target='_blank'>
-                <i className="fa-brands  fa-facebook"></i>     
-              </a>
-              <a className=' link  text-blue-500' href="https://www.linkedin.com/in/mohammed-mamdouh-884a3027b/" rel="noreferrer" target="_blank"> 
-                <i className="fa-brands fa-linkedin"></i> 
-              </a>
-              <a className='  link ' href="https://github.com/MohamedMamdouh2002" rel="noreferrer" target="_blank">
-                <i className="fa-brands fa-github"></i>
-              </a>
-              <a className=' link  text-emerald-500' href="https://wa.me/+201210898884?text=Welcome" rel="noreferrer" target='_blank'>
-                <i className="fa-brands fa-whatsapp"></i>
-              </a>
-          
-            </div>
+                <div className=" links mt-9 flex sm:text-3xl text-2xl bodyColor gap-5">
+            {Links.map((link)=>
+                <a className=' text-blue-700   link  px-1' href={link.href} rel={link.rel} target='_blank'>
+                  <i>{link.icon}</i>     
+                </a>
+            )}
+              </div>
+        
               <div className="mt-9">
 
-                <a href={a} download className=' cv  '>
+              <a href={a} download className='cv'>
                 <span>Download CV</span>
                 <span>Download CV</span>
                           

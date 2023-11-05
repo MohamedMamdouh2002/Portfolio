@@ -29,7 +29,7 @@ export default function Navbar() {
         <><div className="container-fluid fixed  top-0 left-0 end-0 z-10 mainColor border-b">
           <ScrollY/>
 
-            <div className="mx-auto max-w-7xl px-2 ">
+            <div className="mx-auto max-w-7xl px-2  ">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
                   {/* Mobile menu button*/}
@@ -66,9 +66,9 @@ export default function Navbar() {
                     <i className="fa-solid fa-m text-5xl  hover:translate-x-1   hover:translate-y-1" ></i>
 
                   </div>
-                  <div className="hidden lg:ml-96  lg:block ">
+                  <div className="hidden lg:ml-96  lg:block  ">
                     <div className="flex  gap-8">
-                      <ul className="flex navItem  font-semibold items-center mt-2 gap-9">
+                      <ul className="flex navItem   font-semibold items-center mt-2 gap-9">
                         <Link 
                         activeClass="active" 
                         to="home" 
@@ -77,7 +77,7 @@ export default function Navbar() {
                         offset={-60} 
                         duration={500} 
                         >
-                        <li className='italic hover:not-italic hover:-translate-y-2 text-2xl pl-3 hover:text-amber-100 duration-200 cursor-pointer'>
+                        <li className='italic hover:not-italic nav text-2xl pl-3  hover:text-amber-100 duration-200 cursor-pointer'>
                           Home
                         </li>
                         </Link>
@@ -89,7 +89,7 @@ export default function Navbar() {
                         offset={-14} 
                         duration={500} 
                         >
-                        <li className='italic hover:not-italic hover:-translate-y-2 text-2xl pl-3 hover:text-amber-100 duration-200 cursor-pointer'>
+                        <li className='italic hover:not-italic nav text-2xl pl-3 hover:text-amber-100 duration-200 cursor-pointer'>
                           Skills
                         </li>
                         </Link>
@@ -102,7 +102,7 @@ export default function Navbar() {
                         duration={500} 
                         >
 
-                        <li className='italic hover:not-italic hover:-translate-y-2 text-2xl pl-3 hover:text-amber-100 duration-200 cursor-pointer'>
+                        <li className='italic hover:not-italic nav text-2xl pl-3 hover:text-amber-100 duration-200 cursor-pointer'>
                           Projects
                         </li>
                           </Link>
@@ -116,7 +116,7 @@ export default function Navbar() {
                         duration={500} 
                         >
 
-                        <li className='italic hover:not-italic hover:-translate-y-2 text-2xl pl-3 hover:text-amber-100 duration-200 cursor-pointer'>
+                        <li className='italic hover:not-italic nav text-2xl pl-3 hover:text-amber-100 duration-200 cursor-pointer'>
                           Contact
                         </li>
                           </Link>
@@ -155,8 +155,8 @@ export default function Navbar() {
                       {localStorage.getItem("currentMode")=='light'?
                         
                         
-                        <Disclosure.Panel className='lg:hidden mt-12 border mx-1 rounded-b-lg'>
-                        <div className="space-y-1 px-2 pb-3 pt-2">
+                        <Disclosure.Panel className='lg:hidden mt-14 pt-1 border border-t-0  fixed w-full z-10 bg-slate-950 rounded-b-lg'>
+                        <div className="space-y-1 px-2 pb-3 pt-2 mt-1">
                             <Disclosure.Button className=' '>
                               <ul
                                 
@@ -220,7 +220,7 @@ export default function Navbar() {
                         </div>
                       </Disclosure.Panel> 
                       :
-                      <Disclosure.Panel className='lg:hidden border mt-12 border-black mx-1 rounded-b-lg'>
+                      <Disclosure.Panel className='lg:hidden border mt-14  fixed w-full z-10 border-amber-400 bg-amber-300 border-t-0 rounded-b-lg'>
                       <div className="space-y-1 px-2 pb-3 pt-2">
                           <Disclosure.Button>
                             <ul className="flex navItem  flex-col font-semibold items-center mt-2 gap-4">
